@@ -1,6 +1,7 @@
 import React from "react";
 import {Button, FormControl, FormGroup, HelpBlock} from "react-bootstrap";
-import {Dao1901Votes, web3} from "../../../../contracts/Dao1901Votes.sol";
+import {Dao1901Votes} from "../../../../contracts/Dao1901Votes.sol";
+import {web3} from '../../web3Setup';
 
 export default class Votes extends React.Component {
   constructor(props) {

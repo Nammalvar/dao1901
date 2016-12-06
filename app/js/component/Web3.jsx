@@ -1,6 +1,6 @@
 import React from 'react';
 import {SplitButton, MenuItem} from 'react-bootstrap';
-import {web3} from '../../../contracts/Dao1901Members.sol';
+import {web3} from '../web3Setup';
 
 let selectAccountsOptions = [];
 

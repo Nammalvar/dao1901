@@ -1,5 +1,9 @@
 import 'babel-polyfill';
-import './exposeContracts';
+
+import './web3Setup';
+import './exposeDao1901Members';
+//import './exposeDao1901Votes';
+
 import '../static/stylesheet.css';
 import {Router, Route, IndexRoute, hashHistory} from 'react-router'
 import React from 'react';

@@ -1,6 +1,7 @@
 import React from 'react';
 import {Row, Well} from 'react-bootstrap';
-import {Owned, web3} from '../../../contracts/Owned.sol';
+import {Owned} from '../../../contracts/Owned.sol';
+import {web3} from '../web3Setup';
 
 export default class Web3 extends React.Component {
   constructor() {

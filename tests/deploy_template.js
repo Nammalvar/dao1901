@@ -11,7 +11,7 @@ function deploy{name}(arg) {{
     console.log('deploying {name} contract...');
     return {name}Contract.new(
         arg,
-        {{from:eth.coinbase,
+        {{from: web3.eth.coinbase,
           data: {name}AbiBin.bin, gas: 1000000}},
         function(error, contract){{
             if (error) {{
@@ -24,6 +24,8 @@ function deploy{name}(arg) {{
                         contract.transactionHash);
             }} else {{
                 console.log("contract {name} mined! Address: " + contract.address);
+              // Expose Dao1901Members globally
+              window.{name} = contract;
             }}
         }})
 }}

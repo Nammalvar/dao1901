@@ -1,4 +1,4 @@
-import {Dao1901Votes} from "../../../../contracts/Dao1901Votes.sol";
+//import {Dao1901Votes} from "../../../../contracts/Dao1901Votes.sol";
 import React from "react";
 
 import VotesByProposalForm from './VotesByProposalForm';
@@ -7,6 +7,7 @@ import List from './List';
 import ProposalsListItem from './ProposalsListItem';
 import VotesListItem from './VotesListItem';
 import VoteForm from './VoteForm';
+//import web3 from '../../web3Setup';
 
 // Log Events
 window.Dao1901VotesEvents = Dao1901Votes.allEvents(null,
@@ -87,7 +88,7 @@ export default class Votes extends React.Component {
       this.setState({totalProposals: total.toNumber()}, cb(total.toNumber()));
     });
   }
-  
+
   /**
    * Get All Votes By Proposal
    * @param proposalId

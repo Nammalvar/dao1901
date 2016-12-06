@@ -36,7 +36,6 @@
     "source-map-support": "^0.4.1",
     "style-loader": "^0.13.1",
     "web3": "^0.16.0",
-    "web3-loader": "1.x",
     "webpack": "^1.13.0",
     "webpack-node-externals": "^1.2.0"
   },
@@ -48,6 +47,7 @@
     "react-bootstrap": "^0.30.2",
     "react-dom": "^15.0.1",
     "react-router": "^3.0.0",
+    "web3": "^0.16.0",
     "webpack-dev-server": "^1.14.1"
   }
 }

@@ -1,6 +1,7 @@
 import React from 'react';
 import {Button, Form, FormControl, FormGroup} from 'react-bootstrap';
-import {Dao1901Members, web3} from '../../../contracts/Dao1901Members.sol';
+import {Dao1901Members} from '../../../contracts/Dao1901Members.sol';
+import {web3} from '../web3Setup';
 
 let members = [];
 
